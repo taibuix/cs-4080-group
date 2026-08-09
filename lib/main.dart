@@ -204,16 +204,24 @@ class _Hero extends StatelessWidget {
                       end: Alignment.bottomRight,
                     ),
                   ),
-                  child: const Stack(
+                  child: Stack(
                     alignment: Alignment.center,
                     children: [
-                      Text('🎧', style: TextStyle(fontSize: 150)),
-                      Positioned(
+                      Positioned.fill(
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(36),
+                          child: Image.asset(
+                            'assets/products/banner.jpg',
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      const Positioned(
                         top: 24,
                         right: 24,
                         child: _Pill(label: 'Free shipping over \$150'),
                       ),
-                      Positioned(
+                      const Positioned(
                         bottom: 24,
                         left: 24,
                         child: _Pill(label: '★ 4.9 customer favorite'),
