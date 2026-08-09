@@ -1,0 +1,12 @@
+{
+  "name": "Nova Market",
+  "short_name": "Nova",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F7F7F5",
+  "theme_color": "#18181B",
+  "description": "A modern Flutter web storefront",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false
+}
+
